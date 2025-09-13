@@ -107,9 +107,56 @@
             color: #999;
         }
 
+          .timetable-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .timetable th,
+        .timetable td {
+            border: 1px solid #ffc4779d;
+            padding: 12px 8px;
+            text-align: center;
+        }
+
+        .timetable td {
+            color: #000000;
+        }
+
+        .timetable th {
+            background-color: #f5f5dc;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .timetable td:first-child {
+            background-color: #f5f5dc;  
+            color: #000000;                
+        }
+
+        .timetable tr:first-of-type td {
+            background-color: #f5f5dc;  
+            color: #000000;                
+        }
+
+        .timetable tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .timetable tr:hover {
+            background-color: #ffd9ae;
+        }
+        
         .about-text{
             font-size:14px;
-            color: #666;
+            color: #000000;
             text-align: center;
             line-height: 1.5;
         }
@@ -168,20 +215,78 @@
                 <h2 class="section-title">Newest Post</h2>
                     <article>
                         <h3 class="post-title">First Post</h3>
-                        <p class = "post-content">
-                            CS major<br>
-                            class of 2027<br>
-                            likes to golf
-                        </p>   
+                       <p class = "post-content">
+                            Welcome to my blog! Thank you for visiting <br> 
+                            and I hope you enjoy getting a look into my daily life!<br>
+                             I am currently studying:<br><br>
+                                <ul>
+                                    <li><a href="EGR227 Fall 2025 Syllabus(1).pdf">Data Structures and Analysis MWF 2:30-3:30 PM</a></li>
+                                    <li><a href="Syllabus.EGR325.2025.04.FA.v1.00.pdf">Databases TR 2-3:30 PM</a></li>
+                                    <li><a href="EGR 329 - Computer Architecture - Syllabus.pdf">Computer Architecture TR 7-8:30 AM</a></li>
+                                    <li><a href="FA25_STA310_Mathematical_Statistics_I_ELee_syllabus(1).pdf">Mathematical Statistics TR 12:15-1:45 PM</a></li>
+                                    <li><a href="CSC321_Syllabus_Fa25.pdf">Web Development MW 5-6:30 PM</a></li>
+                                </ul>
+                        </p>
                     </article>
             </section>
 
             <aside class = "about-me">
                 <h2 class = "section-title"> About Me</h2>
                 <img src="profilepic.JPG" class="profile-image-real" alt="Profile Picture">
-                <p class="about-text">Johnathan Fierro</p>
+                <p class="about-text">
+                    Johnathan Fierro<br>
+                    Class of 2027<br>
+                    Computer Science Major <br>
+                    (Machine Learning & AI)
+                </p>
             </aside>
         </main>
+
+          <section class="timetable-section">
+            <h2 class="section-title">My Schedule</h2>
+            <table class="timetable">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>7:00-8:30 AM</td>
+                    <td></td>
+                    <td>Computer Architecture</td>
+                    <td></td>
+                    <td>Computer Architecture</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:15-1:45 PM</td>
+                    <td></td>
+                    <td>Mathematical Statistics</td>
+                    <td></td>
+                    <td>Mathematical Statistics</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:00-3:30 PM</td>
+                    <td>Data Structures</td>
+                    <td>Databases</td>
+                    <td>Data Structures</td>
+                    <td>Databases</td>
+                    <td>Data Structures</td>
+                </tr>
+                <tr>
+                    <td>5:30-6:30 PM</td>
+                    <td>Web Development</td>
+                    <td></td>
+                    <td>Web Development</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
 
         <footer>
             <a href="#twitter">Twitter</a>
