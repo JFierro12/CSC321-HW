@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+    <title>My personal blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            color: #3333;
+            line-height: 1.6;
+
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1{
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        nav{
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: unerline;
+            color: #0066cc;
+            margin:0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #004499;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px
+        }
+        
+        .newest-post{
+            flex:2;
+        }
+
+        .about-me{
+            flex: 1;
+        }
+
+        .section-title {   
+            font-size:18;
+            font-weight:bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .post-title{
+            font-size:16px;
+            font-weight: bold;
+            margin-bottom:10px;
+            color: #333;
+        }
+        .post-content{
+            font-size: 14px;
+            color: #666;
+            line-height:1.5;
+        }
+
+        .profile-image{
+            width: 80px;
+            height: 80px;
+            background-color:#ddd;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image::before{
+            content: "👤";
+            font-size: 40px;
+            color: #999;
+        }
+
+        .about-text{
+            font-size:14px;
+            color: #666;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        footer{
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        footer a {
+            text-decoration: underline;
+            color: #0066cc;
+            margin: 0.5px;
+            font-size: 14px;
+        }
+
+        footer a:hover{
+            color: #004499
+        }
+
+        @media (max-width: 768px) {
+            .main-content{
+                flex-direction: column;
+                gap: 30px;
+            }
+            .container{
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My personal blog</h1>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#about">About</a>
+                </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="newest-post">
+                <h2 class="section-title">Newest Post</h2>
+                    <article>
+                        <h3 class="post-title">First Post</h3>
+                        <p class = "post-content">
+                            CS major<br>
+                            class of 2027<br>
+                            likes to golf
+                        </p>   
+                    </article>
+            </section>
+
+            <aside class = "about-me">
+                <h2 class = "section-title"> About Me</h2>
+                <div class = "profile-image"></div>
+                <p class="about-text">Johnathan Fierro</p>
+            </aside>
+        </main>
+
+        <footer>
+            <a href="#twitter">Twitter</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#instagram">Instagram</a>=
+        </footer>
+    </div>
+</body>
+</html>
